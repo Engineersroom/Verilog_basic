@@ -20,28 +20,30 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module tb_d_ff;
+module tb_D_FF;
     reg D;
     reg clk;
-    wire Q, nQ;
+    reg RST;
+    wire Q;
 
-    D_FF_ dff (
-        .D(D),
+    D_FF_ dff1(
+        .d(D),
         .clk(clk),
-        .Q(Q),
-        .nQ(nQ)
+        .rst(RST),
+        .q(Q)
     );
 
     initial begin
         // Initialize inputs
         D = 0;
         clk = 0;
+        RST = 0;
 
         // Toggle clock every 10 time units
         repeat (20) begin
             #5 clk = ~clk;
         end
-
+        #5 RST = 1;
         // Set D to 1
         #5 D = 1;
 
@@ -62,10 +64,10 @@ module tb_d_ff;
     end
 
     // Monitor output values
-    always @(Q, nQ)
-        begin
-            $display("Q = %b, nQ = %b", Q, nQ);
-        end
+    always @(Q)
+    begin
+        $display("Q = %b", Q);
+    end
 
 endmodule
 
