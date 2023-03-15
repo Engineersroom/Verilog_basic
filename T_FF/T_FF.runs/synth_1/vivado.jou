@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2021.2.1 (64-bit)
+# SW Build 3414424 on Sun Dec 19 10:57:22 MST 2021
+# IP Build 3405791 on Sun Dec 19 15:54:35 MST 2021
+# Start of session at: Wed Mar 15 22:41:29 2023
+# Process ID: 205768
+# Current directory: C:/Users/MSI/Documents/Eunsang/Code/Verilog/Verilog_basic/T_FF/T_FF.runs/synth_1
+# Command line: vivado.exe -log T_FF_.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source T_FF_.tcl
+# Log file: C:/Users/MSI/Documents/Eunsang/Code/Verilog/Verilog_basic/T_FF/T_FF.runs/synth_1/T_FF_.vds
+# Journal file: C:/Users/MSI/Documents/Eunsang/Code/Verilog/Verilog_basic/T_FF/T_FF.runs/synth_1\vivado.jou
+# Running On: DESKTOP-2VAEH22, OS: Windows, CPU Frequency: 2208 MHz, CPU Physical cores: 8, Host memory: 34172 MB
+#-----------------------------------------------------------
+source T_FF_.tcl -notrace

@@ -21,16 +21,20 @@
 
 
 module D_FF_(
-    input D,
+    input d,
     input clk,
-    output reg Q,
-    output reg nQ
-    );
-    
-    always @(posedge clk)
-        begin
-            Q <= D;
-            nQ <= ~D;
-        end
-    
+    input rst,
+    output reg q
+
+);
+
+    always @(posedge clk or negedge rst)
+    if (!rst) begin
+        q <= 0;
+    end else begin
+        q <= d;
+    end
+
+
+
 endmodule

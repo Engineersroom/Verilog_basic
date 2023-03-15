@@ -1,0 +1,5 @@
+Time resolution is 1 ps
+Q = 0
+Q = 1
+Q = 0
+$finish called at time : 215 ns : File "C:/Users/MSI/Documents/Eunsang/Code/Verilog/Verilog_basic/D_FF/D_FF.srcs/sim_1/new/tb_D_FF.v" Line 63
